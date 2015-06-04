@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">UngDungDatKham</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_benh_vien">BenhVienActivity</string>
+    <string name="title_activity_tra_cuu">TraCuuActivity</string>
+    <string name="title_activity_dang_ky_kham">DangKyKham</string>
+    <string name="title_activity_ca_nhan">CaNhanActivity</string>
+</resources>

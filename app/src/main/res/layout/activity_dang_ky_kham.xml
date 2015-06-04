@@ -1,0 +1,160 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nguyenphuc.datkhambenhvien.DangkykhamActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="ĐĂNG KÝ KHÁM BỆNH"
+        android:id="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:textStyle="bold"
+        android:textColor="#ffff001a" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Họ tên:"
+        android:id="@+id/txtHoten"
+        android:layout_alignBottom="@+id/edtHoten"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/edtHoten"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/edtCmnd"
+        android:layout_below="@+id/edtHoten"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignLeft="@+id/edtHoten"
+        android:layout_alignStart="@+id/edtHoten"
+        android:layout_alignRight="@+id/edtHoten"
+        android:layout_alignEnd="@+id/edtHoten" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="CMND:"
+        android:id="@+id/txtCmnd"
+        android:layout_alignBottom="@+id/edtCmnd"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/edtDiachi"
+        android:layout_below="@+id/edtCmnd"
+        android:layout_alignLeft="@+id/edtCmnd"
+        android:layout_alignStart="@+id/edtCmnd"
+        android:layout_alignRight="@+id/edtCmnd"
+        android:layout_alignEnd="@+id/edtCmnd"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Địa chỉ:"
+        android:id="@+id/txtDiachi"
+        android:layout_alignBottom="@+id/edtDiachi"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/edtDienthoai"
+        android:layout_below="@+id/edtDiachi"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/txtDienthoai"
+        android:layout_toEndOf="@+id/txtDienthoai" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Điện thoại:"
+        android:id="@+id/txtDienthoai"
+        android:layout_alignBottom="@+id/edtDienthoai"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtDienthoai"
+        android:layout_alignLeft="@+id/edtDiachi"
+        android:layout_alignStart="@+id/edtDiachi"
+        android:orientation="horizontal"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tại nhà"
+            android:id="@+id/radHome"
+            android:layout_gravity="right"
+            android:checked="false"
+            android:layout_marginRight="20dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tại bệnh viện"
+            android:id="@+id/radHospital"
+            android:checked="false" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đặt khám"
+        android:id="@+id/btnDatkham"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/edtMota"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/btnDatkham"
+        android:hint="Mô tả tình trạng bệnh lý"
+        android:layout_below="@+id/radioGroup" />
+
+
+</RelativeLayout>

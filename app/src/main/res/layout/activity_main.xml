@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nguyenphuc.ungdungbenhvien.MainActivity">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_weight= "1">
+
+        <LinearLayout
+            android:layout_weight= "1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/imgDatKham"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/datkham" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Đặt khám"
+                android:id="@+id/txtDatKham"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp" />
+
+            <ImageButton
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/imgBenhVien"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/benhvien" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Bệnh Viện"
+                android:id="@+id/txtBenhVien"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight= "1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/imgCaNhan"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/canhan" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Cá Nhân"
+                android:id="@+id/txtCaNhan"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp" />
+
+            <ImageButton
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/imgTraCuu"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/tracuu" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Tra Cứu"
+                android:id="@+id/txtTraCuu"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
